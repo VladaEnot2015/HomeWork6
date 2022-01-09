@@ -1,0 +1,265 @@
+.body_wrapper{
+  margin: auto;
+}
+.header {
+  max-width: 1200px;
+  height: 50px;
+  margin-bottom: 100px;
+}
+.nav_panel_container {
+  display: flex;
+  justify-content: space-between;
+}
+.main_nav_panel {
+  display: flex;
+  width: 490px;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.item_about {
+  width: 260px;
+}
+.services_list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1150px;
+  padding: 0px;
+  margin: auto;
+
+}
+.service_list_item {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+.service_list_item:nth-child(-n + 3) {
+  margin-bottom: 98px;
+}
+.about_head {
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.about_text {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+}
+.body_wrapper {
+  max-width: 1200px;
+}
+.logo {
+  margin: 0px;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(149, 225, 211);
+  font-weight: bold;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.section_title_h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Kaushan Script";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  margin: 0px 0px 20px 0px;
+}
+.section_title_h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0px 0px 70px 0px;
+}
+.section_title_h2::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: rgb(243, 129, 129);
+  margin: 40px auto 0px;
+}
+.href {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(149, 225, 211);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.href:hover {
+  color: rgb(243, 129, 129);
+}
+.href::after {
+  content: "";
+  height: 3px;
+  display: block;
+  width: 100%;
+  background-color: rgba(243, 129, 129, 0);
+  margin: 0px auto;
+  transition-property: transform, background-color;
+  transition-duration: 200ms;
+}
+.href:hover::after {
+  display: block;
+  transform: translateY(10px);
+  background-color: rgba(243, 129, 129, 1);
+}
+.amazing_services{
+  margin-bottom: 90px;
+}
+.our_team{
+  padding: 0px;
+  margin: 0px 0px 16px 0px;
+}
+.meet_our_team_about{
+  max-width: 945px;
+  display: block;
+  text-align: center;
+  margin: 0px auto 90px auto;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+
+}
+.meet_our_team{
+  margin-bottom: 180px;
+}
+.card_name{
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+.profession{
+  display: block;
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+.card_img{
+  margin-bottom: 30px;
+}
+.our_team {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item_hover {
+  position: absolute;
+  background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.7) 0%, rgba(243,129,129,0.7) 100%);
+  z-index: 2;
+  width: 380px;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0%;
+  transition-property:opacity;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.card_wrapper:hover .item_hover{
+  opacity: 100%;
+}
+.team_card {
+  position: relative;
+}
+.facebook{
+  background-image:url(img/facebook.png);
+}
+.twitter{
+  background-image: url(img/twitter.png);
+}
+.pinterest{
+  background-image: url(img/pinterest.png);
+}
+.instagram{
+  background-image: url(img/instagram.png);
+}
+.conteiner{
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(252, 227, 138);
+  border: none;
+  opacity: 100%;
+  cursor: pointer;
+}
+.conteiner:hover{
+  background-color: rgb(149, 225, 211);
+}
+.team_card{
+  background-color: rgb(100, 225, 211);
+  width: 380px;
+  height: 470px;
+}
+.card_wrapper{
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+.card_wrapper:hover{
+transform: translateX(-10px) translateY(-10px);
+}
+.footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-button{
+  width: 150px;
+  height: 40px;
+  background-color: rgb(100, 225, 211);
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+.search{
+  width: 230px;
+  height: 36px;
+  border: 1px solid gray;
+}
+.footer::before{
+  content: "";
+  height: 1px; width: 100%;
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  margin-bottom: 10px;
+}
+.who_made{
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  text-align: center;
+}
+.info-creater{
+  color: rgb(243, 129, 129);
+  text-decoration: none;
+}
